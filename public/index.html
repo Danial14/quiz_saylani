@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/html2canvas@1.0.0-rc.5/dist/html2canvas.js"></script>
+    <script>
+      
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-8 m-4" id="quiz_question">col-sm-8</div>
+        <div class="col-sm m-4 text-right" id="tiMer">00 : 00</div>
+      </div>
+      <div class="row">
+        <div class="col-sm m-4">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" onchange="userChoice(0)">
+            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+          </div>
+        </div>
+        <div class="col-sm m-4">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" onchange="userChoice(1)">
+            <label class="custom-control-label" for="customRadio2">Toggle this custom radio</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm m-4">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" onchange="userChoice(2)">
+            <label class="custom-control-label" for="customRadio3">Toggle this custom radio</label>
+          </div>
+        </div>
+        <div class="col-sm m-4">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" onchange="userChoice(3)">
+            <label class="custom-control-label" for="customRadio4">Toggle this custom radio</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm m-4 text-right">
+          <button type="button" class="btn btn-success" onclick="check()">Next</button>
+        </div>
+      </div>
+      <div>
+        <img id="iMage">
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+<script src="firebase_config.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
